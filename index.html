@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Wordle-ish</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Wordle-ish</h1>
+
+    </header>
+
+    <main>
+
+        <div id="app">
+
+            <section id="word_input">
+                <label for="guess">Guess a five-letter word!</label>
+                <input type="text" name="guess" maxlength="5" minlength="5">
+                <button>Guess</button>
+                <p id="error_message"></p>
+            </section>
+
+            <section id="history"></section>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

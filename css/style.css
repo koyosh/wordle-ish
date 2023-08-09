@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+:root {
+    --blue: #3e97e4;
+    --red: #c44242;
+    --yellow: #e7e755;
+    --green: #4fcd4f;
+    --white: #efefef;
+    --black: #1e1e1e;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Roboto mono', monospace;
+}
+
+header {
+    margin: 0 0 24px 0;
+    text-align: center;
+}
+
+main {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#word_input {
+    margin: 0 0 24px 0;
+    padding: 0 24px 24px 24px;
+    border-bottom: 2px solid var(--white);
+}
+
+#word_input label {
+    display: block;
+    margin: 0 0 8px 0;
+}
+
+#word_input input {
+    width: 120px;
+    height: 32px;
+    border: none;
+    background: var(--white);
+    border-radius: 4px;
+    padding: 0 8px;
+    text-align: center;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+}
+
+#word_input button {
+    height: 32px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 4px;
+    background: var(--blue);
+    color: var(--white);
+}
+
+#error_message {
+    display: block;
+    height: 12px;
+    font-size: 12px;
+    line-height: 12px;;
+    color: var(--red);
+}
+
+.history_group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 12px 0;
+}
+
+.letter {
+    background: var(--white);
+    color: var(--black);
+    font-size: 24px;
+    width: 42px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.letter.match {
+    background: var(--green);
+}
+
+.letter.hit {
+    background: var(--yellow);
+}
